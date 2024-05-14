@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME</title>
+  <script src="index.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="conteiner">
+    <header class="baner">
+      <h1>EXERCÍCIO</h1>
+      <h1 style="text-decoration: underline black;">CADASTRO DE MERCADORIA</h1>
+    </header>
+    <nav class="nav-conteiner" id="nav-conteiner">
+      <button class="btn" id="menu-btnHome">HOME</button>
+      <button class="btn" id="menu-btnCadastro">CADASTRO</button>
+      <button class="btn" id="menu-btnEstoque">ESTOQUE</button>
+    </nav>
+    <main class="sis-conteiner">
+      <div class="home"  id="home">
+        <h3 style="text-align: center;">Descrevendo o código ultilizado na página.</h3>
+        <br>
+        <p>
+          O código ultilizou algumas propriedades JavaScript, foram feitos uso de funções para criar e manipular o comportamento de elementos no html. <br>
+          Algumas das propriedaes JavaScript utilizadas no código como insertRow e insertCell são usadas para se trabalhar com tabelas, já propriedades como innerText e innerHTML foram ultilizadas para inserir valores nos campos da tabela.
+        </p>
+        <br>
+
+        <p>
+          <strong>-Entendendo o insertRow e insertCell na criação de tabelas:</strong> <br>
+          <strong>insertRow:</strong> é usado para criar e inserir uma nova linha em uma tabela retornando uma nova linha criada. <br>
+          <strong>insertCell:</strong> é usado para criar e inserir uma nova célula(coluna) em uma linha de tabela existente retornando uma referência para a nova célula criada. 
+          <br>
+          <strong>Exemplo)</strong> Neste exemplo referenciaremos a tabela  e seus elementos pelo id, em seguida utilizaremos os metodos insertRow e insertCell para criar linhas e colunas na tabela.
+          <br> <br>
+          <code>
+            <strong id="recuar">-</strong> let table = document.getElementById('myTable'); <br>
+            <strong id="recuar">-</strong> let newRow = table.insertRow(); <br>
+            <strong id="recuar">-</strong> let newCell = newRow.insertCell(); 
+          </code>
+          <br> <br>
+          <strong>Obs)</strong> No código JavaScript desta página usamos o insertRow e insertCell, referenciamos os elementos que são criadas de maneira dinamica ao preencher o formulário e clicar no botão cadastrar. 
+        </p>
+        <details>
+          <summary>cliqui para exibir imagem</summary>
+          <img src="/img/imgCod.PNG" alt="imagem do trecho do código">
+        </details>
+        <br>
+
+        <p>
+          <strong>-Diferença entre innerText, innerHTML e textContent</strong> <br>
+          Ambas são usadas para acessar ou modificar o conteúdo de um elemento HTML, mas possuem algumas diferenças. <br>
+          <strong>innerText:</strong> inseri e retorna apenas texto dos elementos HTML. <br>
+          <strong>innerHTML:</strong> é usada para obter ou definir o conteúdo HTML interno de um elemento, incluindo todas as tags HTML e seus respectivos atributos. Ou seja, o innerHTML retorna todo o conteúdo interno do elemento, incluindo as tags HTML. <br>
+          <strong>textContent:</strong> é usada para obter ou definir o conteúdo textual de um elemento, sem incluir o conteúdo HTML interno, assim como o innerText. A diferença é que o textContent é padronizado pela W3C e retorna todo o conteúdo de texto interno de um elemento, incluindo espaços em branco e quebras de linha.
+        </p>
+        <br>
+
+        <p>
+          <strong>-Propriedade readonly e disabled:</strong> <br>
+          são utilizadas para tornar um elemento HTML somente leitura ou inativo, respectivamente, porém elas possuem algumas diferenças importantes. <br>
+          <strong>readonly:</strong> é usada para tornar um elemento somente leitura, o que significa que o valor do elemento não pode ser editado, mas ele ainda pode ser selecionado e copiado.  <br>
+          <strong>disabled:</strong> é usada para tornar um elemento inativo, o que significa que ele não pode ser selecionado ou editado pelo usuário e nem submetido em um formulário. Isso é geralmente usado para botões ou campos de entrada que não são relevantes para o usuário em certas situações.
+
+        </p>
+        <br>
+
+        <p>
+          Removendo o contador do <strong>input number</strong>: para removermos o contador do input number no css referenciamos o  tipo de input<br>
+          <strong>Exemplo 1)</strong> Para remover dos navegadores Chrome, Edge, Safari entre outros. <br> <br>
+          <code>
+            <strong id="recuar">-</strong> input[type="number"]::-webkit-outer-spin-button, <br>
+            <strong id="recuar">-</strong> input[type="number"]::-webkit-inner-spin-button { <br>
+            <strong id="recuar">---</strong> -webkit-appearance: none; <br>
+            <strong id="recuar">---</strong> margin: 0; <br>
+            <strong id="recuar">-</strong> } <br> <br>
+          </code>
+          <strong>Exemplo 2)</strong> Para remover do Mozila. <br> <br>
+          <code>
+            <strong id="recuar">-</strong> input[type="number"] { <br>
+            <strong id="recuar">---</strong> -moz-appearance: textfield; <br>
+            <strong id="recuar">-</strong> }
+          </code>
+        </p>
+      </div>
+      <div class="form-conteiner" id="form">
+        <form class="form" id="formId">
+          <label for="id-prod">Id:</label>
+          <input type="text" name="id-prod" id="id-prod" class="input-num" disabled>
+          <label for="desc">DESCRIÇÃO:</label>
+          <input type="text" name="desc" id="desc" class="inpt-desc" placeholder="Digite o nome do produto">
+          <br>
+          <label for="quat" class="label-num">QUANTIDADE:</label>
+          <input type="number" name="quant" id="quant" class="input-num"  value="0">
+          <label for="pCusto" class="label-num">PREÇO CUSTO:</label>
+          <input type="text" name="pCusto" id="pCusto" class="input-num" value="0,00">
+          <label for="pVenda" class="label-num">PREÇO VENDA:</label>
+          <input type="text" name="pVenda" id="pVenda" class="input-num" value="0,00"> 
+        </form>
+        <br>
+        <input type="button" value=" CADASTRAR " id="btnCadastrar">
+      </div>
+      <div class="estoque-conteiner" id="estoque">
+        <section class="estoque" id="estoqueId">
+          <table class="tab-moveis" id="tab-moveis">
+            <thead class="tab-cabecalho">
+              <tr>
+                <td class="td-id">ID</td>
+                <td class="td-desc">DESCRIÇÃO</td>
+                <td class="td-num">QUANTIDADE</td>
+                <td class="td-num">P.CUSTO R$</td>
+                <td class="td-num">P.VENDA R$</td>
+              </tr>
+            </thead>
+            <tbody class="tb-produt" id="tb-produt"></tbody>
+          </table>
+        </section>
+      </div> 
+    </main>
+    <footer class="rodape" id="rodape">
+      <h5>Sistema de Cadastro de Estoque</h5>
+      <nav>
+        <p>Links:</p>
+        <a href="https://www.youtube.com/watch?v=t2sAcA5CAcI" target="_blank">
+          Criando Login
+        </a>
+        <a href="https://www.youtube.com/watch?v=WOwiwP87i7A" target="_blank">
+          Criando Abas
+        </a>
+        <a href="https://www.youtube.com/watch?v=ulDflvGvx4Y" target="_blank">
+          Criando Menus
+        </a>
+        <a href="https://www.youtube.com/watch?v=0y9qookjE0w" target="_blank">
+          Mostrar/Ocular Elementos
+        </a>
+        <a href="https://www.youtube.com/watch?v=ImkWbhXnISM" target="_blank">
+          Manipulando Tabelas com JS
+        </a>
+      </nav>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,206 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #e0dddd;
+}
+
+.conteiner {
+  background-color: #e0dddd;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+header {
+  /* position: absolute; */
+  background-color: #d1c7c7;
+  width: 100%;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: center;
+  justify-content: center;
+}
+/* |||||||||||||||||||||||||||||||||| */
+/* Menu */
+#nav-conteiner{
+  border-bottom: solid 4px #d1c7c7;
+}
+
+.nav-conteiner{
+  /* position:fixed; */
+  width: 100%;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-conteiner button{
+  background-color: transparent;
+  width: 85px;
+  height: 30px;
+  margin: 2px 0px 0px 0px;
+  border: none;
+}
+
+#menu-btnHome {
+  background-color: #d1c7c7;
+}
+
+/* |||||||||||||||||||||||||||||||||| */
+/* Main */
+.sis-conteiner {
+  width: 100%;
+  height: 100%;
+  margin: 10px 0 10px 0;
+  pad: 10px 0 10px 0;
+}
+
+/* -Home- */
+.sis-conteiner .home{
+  margin: 10px 0 5px 10px;
+  height: 100%;
+}
+
+/* usando este recurso para recuar o paragrafo a esquerda */
+#recuar{
+  visibility: hidden;
+}
+
+code{
+  font-size: 16px;
+}
+
+details{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+details summary{
+  text-decoration: underline;
+  color: #4091c7;
+  cursor: pointer;
+}
+
+details summary:hover{
+  color: #48c2e7;
+}
+
+details img{
+  margin: auto;
+  padding: auto;
+}
+
+/* -Formulario(cadastrar)- */
+.sis-conteiner #form {
+  display: none;
+}
+
+.sis-conteiner .form-conteiner{
+  height: 100vh;
+}
+
+.sis-conteiner .form label,input,button{
+  margin: 5px 0 5px 10px;
+  height: 20px;
+}
+
+.sis-conteiner .form input{
+  border: none;
+  outline: none;
+  height: 25px;
+  font-size: 16px;
+}
+
+.sis-conteiner .form .input-num{
+  width: 100px;
+}
+
+.sis-conteiner .form .inpt-desc{
+  width: 450px;
+}
+
+/* Removendo o contador do input(quant) number  */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Removendo o contador do input nunber no Mozila */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* -Tabela(estoque)- */
+.sis-conteiner #estoque{
+  display: none;
+}
+
+.sis-conteiner .estoque-conteiner{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.sis-conteiner .tab-moveis table,td,tr{
+  border: solid 1px black;
+  border-collapse: collapse;
+  text-align: center;
+
+}
+
+.sis-conteiner .estoque .tab-cabecalho{
+ height: 30px;
+ background-color: #bdb0b0;
+}
+
+.sis-conteiner .estoque .td-id{
+  width: 75px;
+}
+
+.sis-conteiner .estoque .td-desc{
+  width: 300px;
+}
+
+.sis-conteiner .estoque .td-num{
+  width: 124px;
+}
+
+.sis-conteiner .estoque .tab-moveis td {
+  text-transform: uppercase;
+}
+
+
+/* |||||||||||||||||||||||||||||||||| */
+/* Rodape */
+#rodape{
+  visibility: visible;
+}
+
+.rodape{
+  width: 100%;
+  height: 60px;
+  background-color: #bdb0b0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+}
+
+/* Links */
+.rodape nav{
+  display: flex;
+  flex-direction: row;
+}
+
+.rodape a{
+  margin: 0px 0px 0px 15px;
+}

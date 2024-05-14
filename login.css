@@ -1,0 +1,87 @@
+body{
+  background-color: #4e4a4a;
+  /* Esconde a barra de rolagem */
+  overflow: hidden;
+}
+
+.area-login{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login{
+  background-color: #6b6565;
+  width: 400px;
+  height: 400px;
+  padding: 40PX;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  border-radius: 9px;
+}
+
+.login img{
+  width: 130px;
+  height: 120px;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 260px;
+  height: 120px;
+}
+
+.login input{
+  width: 250px;
+  height: 30px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  color: #6b6565;
+  font-size: 14px;
+}
+
+.login input::placeholder{
+  text-align: center;
+  color: #6b6565;
+  font-size: 14px;
+}
+
+.login button{
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 9px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #6b6565;
+  cursor: pointer;
+}
+
+.login button:hover{
+  background-color: #faebd7;
+}
+
+.area-login p{
+  font-size: 20px;
+}
+
+.area-login .criarConta{
+  color: #a9af55;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.area-login .criarConta:hover{
+  font-size: 20px;
+}
+
+
+
